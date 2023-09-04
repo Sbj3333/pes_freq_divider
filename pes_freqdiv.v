@@ -1,4 +1,4 @@
-module iiitb_freqdiv(en,clkin,n,clkout);
+module pes_freqdiv(en,clkin,n,clkout);
 
 input clkin;
 input [3:0]n;

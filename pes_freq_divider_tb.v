@@ -1,20 +1,20 @@
 `timescale 1ns/1ps
-module iiitb_freqdiv_tb;
+module pes_freqdiv_tb;
 
 reg clk;
 reg en;
 reg [3:0]n;
 wire clkout;
 
-iiitb_freqdiv f1(en,clk,n,clkout);
+pes_freqdiv f1(en,clk,n,clkout);
 
 initial
 begin
 clk=0;
 en=0;
 n=3;
-$dumpfile ("iiitb_freqdiv_vcd.vcd"); 
-$dumpvars(0,iiitb_freqdiv_tb);
+  $dumpfile ("pes_freqdiv_vcd.vcd"); 
+  $dumpvars(0,pes_freqdiv_tb);
 
 
 forever
